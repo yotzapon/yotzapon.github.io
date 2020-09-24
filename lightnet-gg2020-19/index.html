@@ -44,34 +44,34 @@ Notes for the _first_ slide!
       Code:
 
       ```ruby
-      POST /v1.1/remittances.refund HTTP/1.1
-      Host: http://localhost:8080
-      Authorization: Bearer 2VCGMpnm7b73HzVitlbGH88kC6FZ
-      Content-Type: application/json
+          POST /v1.1/remittances.refund HTTP/1.1
+          Host: http://localhost:8080
+          Authorization: Bearer 2VCGMpnm7b73HzVitlbGH88kC6FZ
+          Content-Type: application/json
 
-      {
-        "data": {
-              "transactionId":"88b214bd-9012-40a5-793e-b1a710f2217b",
-          "destination": {
-            "withdrawalId": "19410042"
-          },
-          "feeInfo": {
-            "amount": "300.00",
-            "currency": "THB",
-            "type": "included"
-          },
-          "feeRefund": "Y",
-          "reason": "NO_RCV_LOC",
-          "reversalType": "cancel",
-          "source": {
-            "transaction": {
-              "amount": "200.00",
-              "currency": "THB"
+          {
+            "data": {
+                  "transactionId":"88b214bd-9012-40a5-793e-b1a710f2217b",
+              "destination": {
+                "withdrawalId": "19410042"
+              },
+              "feeInfo": {
+                "amount": "300.00",
+                "currency": "THB",
+                "type": "included"
+              },
+              "feeRefund": "Y",
+              "reason": "NO_RCV_LOC",
+              "reversalType": "cancel",
+              "source": {
+                "transaction": {
+                  "amount": "200.00",
+                  "currency": "THB"
+                }
+              },
+              "terminalName": "Testterminal-01"
             }
-          },
-          "terminalName": "Testterminal-01"
-        }
-      }
+          }
       ```
 
 ---
